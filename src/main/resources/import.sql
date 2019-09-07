@@ -1,6 +1,6 @@
-insert into user_db (id, email, password) values (1, 'john.doe@gmail.com', 'password');
+insert into user_db (id, email, password) values (1, 'arjun@gmail.com', 'password');
 
-insert into user_db (id, email, password) values (2, 'john.doe2@gmail.com', 'password');
+insert into user_db (id, email, password) values (2, 'ram@gmail.com', 'password');
 
 insert into user_db (id, email, password) values (3, 'test', 'test');
 insert into user_db (id, email, password) values (4, 'testweb', 'test');
@@ -10,10 +10,10 @@ insert into user_db_authorities (user_db_id, authorities) values (3, 'ROLE_WEB')
 insert into user_db_authorities (user_db_id, authorities) values (3, 'ROLE_USER');
 insert into user_db_authorities (user_db_id, authorities) values (4, 'ROLE_WEB');
 
-insert into city (id, name) values (1, 'Łódź');
-insert into city (id, name) values (2, 'Gdynia');
-insert into city (id, name) values (3, 'Warszawa');
-insert into city (id, name) values (4, 'Katowice');
+insert into city (id, name) values (1, 'Pokhara');
+insert into city (id, name) values (2, 'Kathmandu');
+insert into city (id, name) values (3, 'Gorkha');
+insert into city (id, name) values (4, 'Dharan');
 
 insert into coordinates (id, latitude, longitude) values (1,10,20);
 insert into coordinates (id, latitude, longitude) values (2,10,10);
@@ -25,23 +25,23 @@ insert into rating (id, value) values (4, 4);
 insert into rating (id, value) values (5, 5);
 
 
-insert into hotel_detail (id, name, city_id, description,address, coordinates_id,rating_id,picture_path) values (1, 'hotelName1',1,'Hotel Senator jest obiektem czterogwiazdkowym. To gwarancja komfortu pokoi hotelowych i jakości obsługi  oraz wysokiego bezpieczeństwa naszych Gości. Budynek Hotelu Senator jest budowlą historyczną dlatego jego architektura i wnętrza są niepowtarzalne. <br/> <br/> Do dyspozycji naszych Klientów jest całodobowa recepcja (pracownicy recepcji posługują się językiem angielskim)','hotel_1_address',1,4, 'image\a.jpg');
+insert into hotel_detail (id, name, city_id, description,address, coordinates_id,rating_id,picture_path) values (1, 'hotelName1',1,'Hotel Waterfont is a four-star hotel. It is a guarantee of hotel room comfort and quality of service as well as high security of our guests. The building of the Waterfont Hotel is a historical building, therefore its architecture and interiors are unique. <br/> <br/> A 24-hour reception is available to our clients (reception staff speak English)','hotel_1_address',1,4, 'image\a.jpg');
 insert into hotel_detail (id, name, city_id, description,address, coordinates_id,rating_id,picture_path) values (2, 'hotelName2',1,'hotel_2_description','hotel_2_address', 2,5, 'image\b.jpg');
 
 
 insert into hotel_facilities (id, name) values (1,'Parking');
-insert into hotel_facilities (id, name) values (2,'Basen');
-insert into hotel_facilities (id, name) values (3,'Siłownia');
-insert into hotel_facilities (id, name) values (4,'Sauna');
+insert into hotel_facilities (id, name) values (2,'Swimming Pool');
+insert into hotel_facilities (id, name) values (3,'Gym');
+insert into hotel_facilities (id, name) values (4,'Bathroom');
 
 
 insert into hotel_detail_hotel_facilities (hotel_detail_id ,hotel_facilities_id) values (1,1);
 insert into hotel_detail_hotel_facilities (hotel_detail_id ,hotel_facilities_id) values (1,2);
 insert into hotel_detail_hotel_facilities (hotel_detail_id ,hotel_facilities_id) values (2,1);
 
-insert into food_offer (id, name) values (1,'Śniadanie');
-insert into food_offer (id, name) values (2,'Obiad');
-insert into food_offer (id, name) values (3,'Kolacja');
+insert into food_offer (id, name) values (1,'Breakfast');
+insert into food_offer (id, name) values (2,'Dinner');
+insert into food_offer (id, name) values (3,'Supper');
 
 insert into hotel_detail_food_offer (hotel_detail_id ,food_offer_id) values (1,1);
 insert into hotel_detail_food_offer (hotel_detail_id ,food_offer_id) values (1,2);
@@ -62,9 +62,9 @@ insert into hotel_room_list (hotel_id, room_list_id) values (2,3);
 
 
 
-insert into room_facilities (id, name) values (1,'Telewizor');
+insert into room_facilities (id, name) values (1,'TV');
 insert into room_facilities (id, name) values (2,'WiFi');
-insert into room_facilities (id, name) values (3,'Łaźienka');
+insert into room_facilities (id, name) values (3,'Bathroom');
 
 insert into room_room_facilities (room_id ,room_facilities_id) values (1,1);
 insert into room_room_facilities (room_id ,room_facilities_id) values (1,2);
